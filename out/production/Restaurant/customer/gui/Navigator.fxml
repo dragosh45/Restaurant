@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="561.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" layoutX="128.0" layoutY="149.0" prefHeight="439.0" prefWidth="337.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton fx:id="newOrder" buttonType="RAISED" onAction="#openFoodItems" prefHeight="104.0" prefWidth="203.0" ripplerFill="#328002" text="New">
+               <font>
+                  <Font size="51.0" />
+               </font></JFXButton>
+            <VBox fx:id="statusBox" alignment="CENTER" prefHeight="224.0" prefWidth="561.0" spacing="10.0">
+               <children>
+                  <Label alignment="CENTER" text="Order Status:">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="status" alignment="CENTER" prefHeight="85.0" prefWidth="452.0" text="Status">
+                     <font>
+                        <Font size="43.0" />
+                     </font></Label>
+                  <Label fx:id="time" alignment="CENTER" prefHeight="40.0" prefWidth="265.0" text="Time" />
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#orderSummary" text="Order Summary" />
+                  <HBox fx:id="payment" alignment="CENTER" spacing="10.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#cardPayment" text="Pay by Card" />
+                        <Button mnemonicParsing="false" onAction="#cashPayment" text="Pay by Cash" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

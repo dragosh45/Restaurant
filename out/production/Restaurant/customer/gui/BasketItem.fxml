@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="340.0" prefWidth="466.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="TOP_RIGHT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="38.0" fitWidth="32.0" onMouseClicked="#remove" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1.0">
+               <image>
+                  <Image url="@../img/cross.png" />
+               </image>
+            </ImageView>
+            <AnchorPane prefHeight="282.0" prefWidth="446.0">
+               <children>
+                  <VBox alignment="CENTER" layoutY="1.0" prefHeight="340.0" prefWidth="446.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+                     <children>
+                        <AnchorPane>
+                           <children>
+                              <HBox prefHeight="190.0" prefWidth="446.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ImageView fx:id="image" fitHeight="189.0" fitWidth="221.0" layoutX="10.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/default.jpg" />
+                                       </image></ImageView>
+                                    <AnchorPane prefHeight="131.0" prefWidth="179.0">
+                                       <children>
+                                          <VBox alignment="CENTER" prefHeight="135.0" prefWidth="179.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <Label fx:id="prodName" layoutX="10.0" layoutY="20.0" text="Product Name" />
+                                                <Label fx:id="price" text="Product Price" />
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="278.0" prefHeight="73.0" prefWidth="179.0">
+                                                   <children>
+                                                      <JFXButton onAction="#decrease" prefHeight="44.0" prefWidth="54.0" ripplerFill="#025713" text="&lt;">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font></JFXButton>
+                                                      <Label fx:id="quantity" prefHeight="25.0" prefWidth="46.0" text="Quantity" />
+                                                      <JFXButton onAction="#increase" prefHeight="44.0" prefWidth="54.0" ripplerFill="#004d0f" text="&gt;">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font></JFXButton>
+                                                   </children>
+                                                </HBox>
+                                                <TextField fx:id="comments" alignment="CENTER" onInputMethodTextChanged="#updateComments" onKeyPressed="#updateComments" onKeyReleased="#updateComments" onKeyTyped="#updateComments" promptText="Comments" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="656.0" prefWidth="838.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="backend.ManagerGUIController">
+   <children>
+      <TabPane fx:id="TapPane" layoutX="14.0" layoutY="14.0" prefHeight="629.0" prefWidth="815.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+        <tabs>
+          <Tab fx:id="Tables" text="Tables">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView layoutX="14.0" layoutY="14.0" prefHeight="540.0" prefWidth="786.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+                          <columns>
+                            <TableColumn fx:id="tableNo" prefWidth="95.19997787475586" text="Table Number" />
+                            <TableColumn fx:id="staffId" minWidth="7.20001220703125" prefWidth="100.0" text="Staff ID Number" />
+                              <TableColumn fx:id="assist" prefWidth="586.400015258789" text="Assist Note" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Orders">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="ordersView" layoutX="14.0" layoutY="14.0" prefHeight="543.0" prefWidth="786.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+                          <columns>
+                            <TableColumn fx:id="orderNo" prefWidth="135.19997787475586" text="Order Number" />
+                            <TableColumn fx:id="tableNo2" prefWidth="134.3999786376953" text="Table Number" />
+                              <TableColumn fx:id="staffId2" prefWidth="144.00006103515625" text="Staff ID Number" />
+                              <TableColumn fx:id="orderSt" prefWidth="105.60003662109375" text="Order Status" />
+                              <TableColumn fx:id="orderTime" prefWidth="148.79998779296875" text="Order Creation Time" />
+                              <TableColumn fx:id="payment" prefWidth="116.7999267578125" text="Payment" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Search">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="10.0" layoutY="28.0" prefHeight="18.0" prefWidth="114.0" text="Table Number" />
+                        <TextField fx:id="tableNoSearch" editable="false" layoutX="14.0" layoutY="46.0" promptText="123456" />
+                        <Label layoutX="14.0" layoutY="98.0" prefHeight="18.0" prefWidth="156.0" text="Staff ID Number" />
+                        <TextField fx:id="StaffIDSearch" editable="false" layoutX="10.0" layoutY="116.0" promptText="123456" />
+                        <Label layoutX="10.0" layoutY="172.0" prefHeight="18.0" prefWidth="155.0" text="Order Status" />
+                        <ComboBox fx:id="orderStatus" layoutX="11.0" layoutY="197.0" prefWidth="150.0" />
+                        <Label layoutX="14.0" layoutY="250.0" prefHeight="18.0" prefWidth="155.0" text="Payment" />
+                        <ComboBox fx:id="paymentOption" layoutX="11.0" layoutY="284.0" prefWidth="150.0" />
+                        <TableView fx:id="searchOrdersView" layoutX="233.0" layoutY="7.0" prefHeight="551.0" prefWidth="568.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="233.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="7.0">
+                          <columns>
+                            <TableColumn fx:id="searchOrderNo" prefWidth="75.0" text="Order ID" />
+                            <TableColumn fx:id="searchStaffId" prefWidth="82.4000244140625" text="Staff ID" />
+                              <TableColumn fx:id="searchTableNo" prefWidth="96.0" text="Table Number" />
+                              <TableColumn fx:id="searchOrderSt" prefWidth="97.5999755859375" text="Order Status" />
+                              <TableColumn fx:id="searchOrderTime" prefWidth="108.7999267578125" text="Order Time" />
+                              <TableColumn fx:id="searchPayment" prefWidth="104.800048828125" text="Payment" />
+                          </columns>
+                        </TableView>
+                        <Button layoutX="14.0" layoutY="364.0" mnemonicParsing="false" text="Search" />
+                        <Button layoutX="96.0" layoutY="364.0" mnemonicParsing="false" text="Reset" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

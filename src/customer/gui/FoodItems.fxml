@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customer.gui.FoodItemsController">
+   <children>
+      <VBox AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <GridPane fx:id="grid">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <AnchorPane>
+                     <children>
+                        <ScrollPane prefHeight="436.0" prefWidth="194.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <content>
+                              <VBox fx:id="filterBox" spacing="10.0" />
+                           </content>
+                        </ScrollPane>
+                     </children>
+                     <padding>
+                        <Insets right="5.0" />
+                     </padding>
+                  </AnchorPane>
+                  <AnchorPane GridPane.columnIndex="1">
+                     <children>
+                        <VBox fx:id="container" prefHeight="436.0" prefWidth="396.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding></VBox>
+                     </children>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+      <HBox layoutX="90.0" layoutY="471.0" prefHeight="64.0" prefWidth="500.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="436.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#cancelEvent" text="Cancel Order" />
+            <Button mnemonicParsing="false" onAction="#basketEvent" text="View Order" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

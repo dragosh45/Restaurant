@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This file contains the customeOrder "object".. 
+
+	Author: Justus Marius Mueller (100862809) 
+	Version: 0.3 
+	-->
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="customOrder" prefHeight="450.0" prefWidth="375.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="kitchen.CustomOrderController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <BorderPane focusTraversable="false" layoutX="0.0" layoutY="0.0" prefHeight="445.0" prefWidth="375.0">
+      <bottom>
+        <GridPane alignment="CENTER">
+          <children>
+            <Button id="" fx:id="completeButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#completeOrder" prefHeight="36.0" prefWidth="180.0" style="-fx-background-color: #9CCB19&#10;" text="Complete" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER">
+              <font>
+                <Font name="System Bold" size="18.0" fx:id="x1" />
+              </font>
+            </Button>
+            <Button id="" fx:id="cancelButton" cancelButton="false" contentDisplay="CENTER" font="$x1" mnemonicParsing="false" onAction="#cancelOrder" prefHeight="36.0" prefWidth="180.0" style="-fx-background-color: #F08080" text="Unconfirm" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+          </children>
+          <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints maxHeight="45.0" minHeight="10.0" percentHeight="0.0" prefHeight="45.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+        </GridPane>
+      </bottom>
+      <center>
+        <GridPane padding="$x2" prefHeight="350.0" prefWidth="375.0">
+          <children>
+            <TextArea fx:id="orderDetails" editable="false" focusTraversable="false" minHeight="-1.0" minWidth="-1.0" mouseTransparent="true" pickOnBounds="true" prefHeight="-1.0" prefWidth="-1.0" styleClass="fontTextArea" text="Empty" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="0">
+              <rotationAxis>
+                <Point3D x="10.0" z="1.0" />
+              </rotationAxis>
+              <stylesheets>
+                <URL value="@application.css" />
+              </stylesheets>
+              <GridPane.margin>
+                <Insets left="2.0" right="2.0" fx:id="x2" />
+              </GridPane.margin>
+            </TextArea>
+            <TextArea fx:id="orderTime" editable="false" focusTraversable="false" mouseTransparent="true" pickOnBounds="true" prefWidth="200.0" text="Unknown" wrapText="true" GridPane.columnIndex="0" GridPane.margin="$x2" GridPane.rowIndex="1">
+              <stylesheets>
+                <URL value="@application.css" />
+              </stylesheets>
+            </TextArea>
+          </children>
+          <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints maxHeight="330.0" minHeight="10.0" percentHeight="0.0" prefHeight="320.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="180.0" minHeight="10.0" percentHeight="0.0" prefHeight="45.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+        </GridPane>
+      </center>
+      <top>
+        <Label id="orderId" fx:id="orderStatus" alignment="CENTER" contentDisplay="CENTER" labelFor="$customOrder" minHeight="19.0" prefHeight="35.0" prefWidth="365.0" style="&#10;" text="Status" BorderPane.alignment="CENTER">
+          <font>
+            <Font size="20.0" />
+          </font>
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+          <BorderPane.margin>
+            <Insets left="6.0" right="6.0" top="2.0" />
+          </BorderPane.margin>
+        </Label>
+      </top>
+    </BorderPane>
+  </children>
+</AnchorPane>

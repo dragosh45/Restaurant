@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="containerPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customer.gui.MainBarController">
+   <children>
+      <VBox layoutX="-7.0" layoutY="-6.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane>
+               <children>
+                  <HBox alignment="CENTER" layoutX="-7.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="131.0" prefWidth="277.0">
+                           <children>
+                              <JFXButton buttonType="RAISED" onAction="#callWaiter" prefHeight="90.0" prefWidth="99.0" ripplerFill="#ae0707" text="Call Waiter" />
+                              <Label fx:id="time" prefHeight="17.0" prefWidth="161.0" />
+                           </children>
+                        </VBox>
+                        <ImageView fitHeight="106.0" fitWidth="237.0" layoutX="189.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0" GridPane.columnIndex="1">
+                           <image>
+                              <Image url="@../img/logo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="mainPane" prefHeight="403.0" prefWidth="500.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,4 @@
+1111	baked beans	main	beans description	1.01	Available
+2222	Cup of Tea	drink	the best drink	500	Unavailable
+6000asdasd	chocolate digestives	dessert	the best biscuit	0.4	Available
+qwerq14562	Malted Milk Biscuits	dessert	a decent biscuit	0.50	Available

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customer.gui.CardController">
+   <children>
+      <AnchorPane layoutX="-100.0" layoutY="-100.0" prefHeight="400.0" prefWidth="400.0">
+         <children>
+            <Label fx:id="sum" layoutX="281.0" layoutY="213.0" prefHeight="26.0" prefWidth="90.0" text="0.00">
+               <font>
+                  <Font size="22.0" />
+               </font></Label>
+            <Button layoutX="275.0" layoutY="341.0" mnemonicParsing="false" onAction="#pay" text="Pay">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button layoutX="103.0" layoutY="369.0" mnemonicParsing="false" onAction="#handleBack" text="Go back" />
+            <ImageView layoutX="173.0" layoutY="111.0">
+               <image>
+                  <Image url="@../img/payment/Card-logo.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="135.0" layoutY="215.0" text="Order total:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="159.0" layoutY="315.0" text="Expiry date:" />
+            <TextField fx:id="cardNumber" layoutX="122.0" layoutY="279.0" prefHeight="25.0" prefWidth="264.0" promptText="Please enter bank card number here" />
+            <Label layoutX="306.0" layoutY="309.0" prefHeight="26.0" prefWidth="0.0" text="/">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="expiryYear" layoutX="322.0" layoutY="310.0" prefHeight="25.0" prefWidth="52.0" promptText="YY" />
+            <TextField fx:id="expiryMonth" layoutX="247.0" layoutY="310.0" prefHeight="25.0" prefWidth="52.0" promptText="mm" />
+            <Label layoutX="254.0" layoutY="213.0" text="£">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cardNumber1" layoutX="122.0" layoutY="248.0" prefHeight="25.0" prefWidth="264.0" promptText="Please enter cardholder's name here" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

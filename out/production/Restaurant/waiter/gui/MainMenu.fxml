@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="masterAnchorPane" prefHeight="893.0" prefWidth="1085.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="waiter.gui.MainMenuController">
+  <children>
+    <Button fx:id="buttonNewOrder" layoutX="721.0" layoutY="16.0" mnemonicParsing="false" onAction="#newOrderEvent" prefHeight="150.0" prefWidth="350.0" text="New Order" textAlignment="CENTER" wrapText="true">
+      <font>
+        <Font size="35.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Button fx:id="buttonManagerFunctions" font="$x1" layoutX="721.0" layoutY="493.0" mnemonicParsing="false" onAction="#managerFunctionsEvent" prefHeight="150.0" prefWidth="350.0" text="Manager Functions" textAlignment="CENTER" wrapText="true" />
+    <Button fx:id="buttonClockOut" font="$x1" layoutX="14.0" layoutY="731.0" mnemonicParsing="false" onAction="#clockOutEvent" prefHeight="150.0" prefWidth="350.0" text="Clock Out" textAlignment="CENTER" wrapText="true" />
+    <Button fx:id="buttonOldOrders" font="$x1" layoutX="14.0" layoutY="255.0" mnemonicParsing="false" onAction="#currentOrdersEvent" prefHeight="150.0" prefWidth="350.0" text="Current Orders" textAlignment="CENTER" wrapText="true" />
+    <Button fx:id="buttonExit" layoutX="721.0" layoutY="729.0" mnemonicParsing="false" onAction="#exitEvent" prefHeight="150.0" prefWidth="350.0" style="-fx-background-color: #bf4040;" text="EXIT" textAlignment="CENTER" wrapText="true">
+      <font>
+        <Font size="50.0" />
+      </font>
+    </Button>
+    <Button fx:id="buttonCurrentOrders" font="$x1" layoutX="14.0" layoutY="16.0" mnemonicParsing="false" onAction="#unconfirmedOrdersEvent" prefHeight="150.0" prefWidth="350.0" text="Unconfirmed Orders" textAlignment="CENTER" wrapText="true" />
+    <Button id="buttonOldOrders" font="$x1" layoutX="14.0" layoutY="493.0" mnemonicParsing="false" onAction="#oldOrdersEvent" prefHeight="150.0" prefWidth="350.0" text="Recall Old Orders" textAlignment="CENTER" wrapText="true" />
+    <Button id="buttonManagerFunctions" font="$x1" layoutX="721.0" layoutY="255.0" mnemonicParsing="false" onAction="#editMenuEvent" prefHeight="150.0" prefWidth="350.0" text="Edit Menu" textAlignment="CENTER" wrapText="true" />
+  </children>
+</AnchorPane>

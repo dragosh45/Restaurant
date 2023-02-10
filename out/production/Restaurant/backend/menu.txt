@@ -1,0 +1,27 @@
+0001	Coca-Cola	Drink	All varieties are available	2.00	Available
+0002	Fanta	Drink	All varieties are available	2.00	Available
+0003	Sprite	Drink	All varieties are available	2.00	Available
+0004	Ice Tea	Drink	Homemade iced tea	2.50	Available
+0005	Juice	Drink	Fresh fruit juice available in my flavours	1.50	Available
+0006	Tea	Drink	The best hot drink	2.50	Available
+0007	Coffee	Drink	The second best hot drink	2.50	Available
+0008	Beer	Drink	A varied choice of brands available	3.00	Available
+0009	Cider	Drink	A varied choice of brands available	3.00	Available
+0010	Red Wine	Drink	The house red wine	3.00	Available
+0011	White wine	Drink	The house white wine	3.00	Available
+0012	Tacos	Main	Crispy Tortillas with chicken, cheese and sour cream	7.99	Available
+0013	Meatballs	Main	Beef Meatballs in tomato and basil sauce	6.99	Available
+0014	Chicken Empanadas	Main	Delicious parcels filled with chicken	6.99	Available
+0015	Vegetable and Feta Empanadas	Main	Delicious parcels filled with roasted vegetables and feta	6.99	Available
+0016	Burrito	Main	Chicken burrito with tomato salsa and guacamole	7.99	Available
+0017	Peri-Peri Chicken Fajita	Main	Marinated chicken with spicy peri-peri sauce	8.99	Available
+0018	Pulled Pork Fajita	Main	Juicy pulled pork in sweet barbecue sauce with salsa and cheese	8.99	Available
+0019	Beef Chilli	Main	Hot beef chilli con carne	6.99	Available
+0020	Paella	Main	Spicy Seafood and Chicken Paella	8.99	Available
+0021	BBQ Ribs	Main	Barbequed pork ribs covered in sticky sauce	8.99	Available
+0022	Nachos	Main	Totilla chips covered in melted cheese with tomato salsa, sour cream and guacamole dips	6.99	Available
+0023	Churros	Dessert	Crispy, gold fried dough dusted with cinnamon sugar	5.00	Available
+0024	Lemon Sorbet	Dessert	Refreshing scoops of lemon sorbet	3.50	Available
+0025	Chocolate Fudge Cake	Dessert	Delicious chocolate spong iced with soft duge ganache. Served with ice cream or cream.	5.00	Available
+0026	Apple and Raspberry Crumble	Dessert	A warm crumble with the sweet pairing of apple and raspberries. Served with ice cream, cream or custard	4.00	Available
+0027	Pineapple Taquito	Dessert	Sweet pineapple chunks wrapped in a cinnamon flavoured tortilla. Served with ice cream or cream.	4.00	Available

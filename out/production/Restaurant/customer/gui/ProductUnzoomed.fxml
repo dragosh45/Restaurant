@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="340.0" prefWidth="282.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="253.0" prefWidth="262.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="prodName" text="Product Name" />
+            <Label fx:id="description" text="Product Description" />
+            <ImageView fx:id="image" fitHeight="168.0" fitWidth="224.0" onMouseClicked="#zoom" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="allegens" text="Product Allegens/etc" />
+            <Label fx:id="price" text="Product Price" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

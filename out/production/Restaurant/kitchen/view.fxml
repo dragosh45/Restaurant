@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This file contains the main content of the GUI. 
+	Author: Justus Marius Mueller (100862809) 
+	Version: 0.4 
+	-->
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="1080.0" prefWidth="1920.0" styleClass="BorderPane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="kitchen.KitchenController">
+  <bottom>
+    <GridPane prefHeight="64.0" prefWidth="1920.0" styleClass="BorderPane">
+      <children>
+        <Button id="issueButton" fx:id="refreshButton" mnemonicParsing="false" onAction="#refresh" prefHeight="61.0" prefWidth="137.0" text="Refresh" textAlignment="CENTER" textFill="BLACK" textOverrun="ELLIPSIS" underline="false" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="0" GridPane.valignment="CENTER">
+          <font>
+            <Font name="Arial Bold" size="20.0" fx:id="x1" />
+          </font>
+          <GridPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" fx:id="x2" />
+          </GridPane.margin>
+        </Button>
+        <Label alignment="BOTTOM_LEFT" text="Team 1©" GridPane.columnIndex="0" GridPane.halignment="LEFT" GridPane.rowIndex="0" GridPane.valignment="BOTTOM">
+          <font>
+            <Font size="20.0" />
+          </font>
+          <GridPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" fx:id="x2" />
+          </GridPane.margin>
+        </Label>
+        <Button fx:id="managerButton" font="$x1" mnemonicParsing="false" onAction="#managerPopUp" prefHeight="61.0" prefWidth="137.0" text="Functions" textAlignment="CENTER" textFill="BLACK" textOverrun="ELLIPSIS" underline="false" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.margin="$x2" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="959.0" minWidth="10.0" prefWidth="880.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1040.0" minWidth="10.0" prefWidth="1040.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </GridPane>
+  </bottom>
+  <center>
+    <GridPane fx:id="aGridPane" focusTraversable="false" gridLinesVisible="false" maxHeight="-1.0" maxWidth="-1.0" minWidth="-1.0" pickOnBounds="true" prefWidth="-1.0" styleClass="BorderPane" visible="true" BorderPane.alignment="CENTER">
+      <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS" maxWidth="375.0" minWidth="10.0" percentWidth="0.0" prefWidth="375.0" />
+        <ColumnConstraints hgrow="ALWAYS" maxWidth="375.0" minWidth="10.0" percentWidth="0.0" prefWidth="375.0" />
+        <ColumnConstraints hgrow="ALWAYS" maxWidth="375.0" minWidth="10.0" percentWidth="0.0" prefWidth="375.0" />
+        <ColumnConstraints hgrow="ALWAYS" maxWidth="375.0" minWidth="10.0" percentWidth="0.0" prefWidth="375.0" />
+        <ColumnConstraints hgrow="ALWAYS" maxWidth="375.0" minWidth="10.0" percentWidth="0.0" prefWidth="375.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints maxHeight="450.0" minHeight="10.0" percentHeight="0.0" prefHeight="450.0" vgrow="ALWAYS" />
+        <RowConstraints maxHeight="450.0" minHeight="10.0" percentHeight="0.0" prefHeight="450.0" vgrow="ALWAYS" />
+      </rowConstraints>
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+      <BorderPane.margin>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+      </BorderPane.margin>
+    </GridPane>
+  </center>
+  <stylesheets>
+    <URL value="@application.css" />
+  </stylesheets>
+</BorderPane>

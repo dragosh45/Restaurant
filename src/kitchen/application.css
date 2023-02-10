@@ -1,0 +1,21 @@
+/*
+ * This is the style sheet for view.fxml
+ * 
+ * Author: Justus Marius Mueller (100862809)
+ * Version: 0.2
+ */
+
+.orderFinish .content{
+  -fx-background-color: green;
+}
+.orderCancel .content {
+  -fx-background-color: red;
+}
+
+.fontTextArea .content {
+  -fx-font: 20px Arial
+}
+
+.BorderPane {
+  -fx-background-color: grey;
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customer.gui.PaypalController">
+   <children>
+      <AnchorPane layoutX="-100.0" layoutY="-100.0" prefHeight="400.0" prefWidth="400.0">
+         <children>
+            <Label fx:id="sum" layoutX="290.0" layoutY="207.0" prefHeight="26.0" prefWidth="91.0" text="100.00">
+               <font>
+                  <Font size="22.0" />
+               </font></Label>
+            <Button layoutX="275.0" layoutY="341.0" mnemonicParsing="false" onAction="#pay" text="Pay">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button layoutX="103.0" layoutY="369.0" mnemonicParsing="false" onAction="#handleBack" text="Go back" />
+            <ImageView layoutX="173.0" layoutY="111.0">
+               <image>
+                  <Image url="@../img/payment/Paypal-logo.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="135.0" layoutY="208.0" text="Order total:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="118.0" layoutY="270.0" text="PayPal account:" />
+            <Label layoutX="116.0" layoutY="310.0" text="PayPal password:" />
+            <TextField fx:id="paypalAccount" layoutX="236.0" layoutY="265.0" prefHeight="25.0" prefWidth="150.0" />
+            <PasswordField fx:id="paypalPassword" layoutX="236.0" layoutY="305.0" prefHeight="25.0" prefWidth="150.0" />
+            <Label layoutX="269.0" layoutY="207.0" text="£ ">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

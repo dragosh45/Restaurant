@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="1080.0" prefWidth="1920.0" 
+  stylesheets="@style.css"
+  xmlns:fx="http://javafx.com/fxml/1" 
+  xmlns="http://javafx.com/javafx/2.2" 
+  fx:controller="waiter.gui.MainController">
+  <children>
+    <HBox layoutX="0.0" layoutY="1040.0" prefHeight="40.0" prefWidth="1920.0" spacing="1500.0">
+      <children>
+        <HBox spacing="50.0">
+          <children>
+            <Label fx:id="labelPosition" text="Position">
+              <font>
+                <Font size="20.0" fx:id="x1" />
+              </font>
+            </Label>
+            <Label fx:id="labelName" font="$x1" text="Name" />
+          </children>
+        </HBox>
+        <Label fx:id="labelTime" font="$x1" text="Time" />
+      </children>
+      <padding>
+        <Insets left="50.0" />
+      </padding>
+    </HBox>
+    <AnchorPane layoutX="0.0" layoutY="0.0" minHeight="-1.0" minWidth="-1.0" prefHeight="1040.0" prefWidth="1920.0" fx:id="MainPane" />
+  </children>
+</Pane>
